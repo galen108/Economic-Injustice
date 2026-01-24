@@ -181,7 +181,7 @@ const WealthLadder = () => {
                         return (
                             <div
                                 key={tier.number}
-                                onClick={() => setSelectedTier(isSelected ? null : tier.number)}
+                                onClick={() => setSelectedTier}
                                 className={`bg-gradient-to-r ${tier.color} rounded-lg border-2 transition-all duration-300 cursor-pointer
                   ${isSelected ? 'border-white scale-[1.02] shadow-2xl' : 'border-transparent hover:border-white/30'}
                   ${isTop4 ? 'min-h-[120px]' : 'min-h-[100px]'} ${isIndigenous ? 'border-emerald-400/50' : ''}`}
