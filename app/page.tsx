@@ -322,4 +322,4 @@ const WealthLadder = () => {
 
 export default WealthLadder;
 
-// FIX
+// NEW FIX
