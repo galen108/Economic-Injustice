@@ -4,7 +4,8 @@ import React, { useState } from 'react';
 import { Info, Users, DollarSign, TrendingUp } from 'lucide-react';
 
 const WealthLadder = () => {
-    const [selectedTier, setSelectedTier] = useState(null);
+    // const [selectedTier, setSelectedTier] = useState(null);
+    const [selectedTier, setSelectedTier] = useState<number | null>(null);
 
     const tiers = [
         {
@@ -181,7 +182,7 @@ const WealthLadder = () => {
                         return (
                             <div
                                 key={tier.number}
-                                onClick={() => setSelectedTier}
+                                onClick={() => setSelectedTier(selectedTier ? null : tier.number)}
                                 className={`bg-gradient-to-r ${tier.color} rounded-lg border-2 transition-all duration-300 cursor-pointer
                   ${isSelected ? 'border-white scale-[1.02] shadow-2xl' : 'border-transparent hover:border-white/30'}
                   ${isTop4 ? 'min-h-[120px]' : 'min-h-[100px]'} ${isIndigenous ? 'border-emerald-400/50' : ''}`}
@@ -321,5 +322,3 @@ const WealthLadder = () => {
 };
 
 export default WealthLadder;
-
-// NEW FIX
