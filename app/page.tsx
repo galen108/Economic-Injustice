@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Info, Users, DollarSign, TrendingUp } from 'lucide-react';
 
-export default function PMIAExplorer() {
+export default function EconomicInjustice() {
     const [selectedTier, setSelectedTier] = useState<number | null>(null);
     const tiers = [
         {
